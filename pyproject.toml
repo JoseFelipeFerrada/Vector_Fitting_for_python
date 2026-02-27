@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vectfit-python"
+version = "0.1.0"
+description = "Vector Fitting for rational approximation of EMT frequency responses."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Sebastian Loaiza Elejalde", email = "author@example.com"},
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-benchmark",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
